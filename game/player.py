@@ -6,7 +6,7 @@ from game.card import Card
 @dataclass()
 class Player:
     name: str
-    stack: int = 10000
+    stack: int = 1000
     hand: list[Card] = field(default_factory=list)
     current_bet: int = 0
     folded: bool = False
